@@ -149,7 +149,7 @@ function(ADD_CODE_COVERAGE)
         # Cleanup lcov
         COMMAND ${LCOV_PATH} --directory . --zerocounters
         WORKING_DIRECTORY ${PROJECT_BINARY_DIR}
-        DEPENDS ${Coverage_DEPENDENCIES}
+	# DEPENDS ${Coverage_DEPENDENCIES}
         COMMENT "Resetting CPP code coverage counters to zero."
     )
 
